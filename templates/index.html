@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Classification Prediction (ML)</title>
+   
+</head>
+<body>
+    <h1>Rice Classification Prediction</h1>
+    <form action="{{ url_for('predict')}}"method="post">
+        <!-- Input fields for each feature column -->
+   
+        <label for="area">Area:</label>
+        <input type="text" id="area" name="area"><br>
+
+        <label for="major">Major Axis Length:</label>
+        <input type="text" id="area" name="majoraxis"><br>
+
+
+        <label for="minor">Minor Axis Length:</label>
+        <input type="text" id="area" name="minoraxis"><br>
+
+
+        <label for="eccentricity">Eccentricity:</label>
+        <input type="text" id="area" name="eccentricity"><br>
+
+        <label for="convex">Convex Area:</label>
+        <input type="text" id="area" name="convex"><br>
+
+
+        <label for="equivdiameter">Equiv Diameter:</label>
+        <input type="text" id="area" name="equivdiameter"><br>
+
+        <label for="extent">Extent:</label>
+        <input type="text" id="area" name="extent"><br>
+
+        <label for="perimeter">Perimeter:</label>
+        <input type="text" id="area" name="perimeter"><br>
+
+        <label for="roundness">Roundness:</label>
+        <input type="text" id="area" name="roundness"><br>
+
+        <label for="ratio">Aspect Ratio:</label>
+        <input type="text" id="area" name="ratio"><br>
+
+
+        <!-- Submit -->
+
+        <input type="submit" value="Predict">
+    </form>
+
+    <!-- Display prediction result -->
+    <br>
+    <br>
+    {{ prediction_text }}
+</body>
+</html>

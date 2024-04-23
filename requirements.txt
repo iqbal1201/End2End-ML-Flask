@@ -1,0 +1,7 @@
+# to ensure app dependencies
+Flask==3.0.3
+pickle-mixin==1.0.2
+pickleshare==0.7.5
+numpy==1.23.3
+scikit-learn==1.2.2
+gunicorn==20.1.0
