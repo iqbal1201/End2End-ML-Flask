@@ -1,4 +1,4 @@
-# Rice Classification - Supervised Learning
+# Rice Classifier ML Apps
 
 **What's Include in this Project**:
 1. Supervised Model Development
